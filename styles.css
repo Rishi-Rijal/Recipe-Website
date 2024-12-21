@@ -69,12 +69,29 @@
     overflow: hidden;
     box-shadow: 5px 5px 40px 5px rgb(176, 167, 167);
     position:relative;
-    
     transition: all 0.5s ease-in-out;
+
 }
+.imagebox #overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    color: rgba(240, 248, 255, 0);
+    background-color: rgb(193, 201, 198,0.0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s linear;
+}
+
 .imagebox:hover{
     transform: scale(1.1);
     box-shadow: 5px 5px 20px 5px rgb(176, 167, 167);
+}
+
+.imagebox #overlay:hover{
+    color: rgba(240, 248, 255, 1);
+    background-color: rgb(193, 201, 198,0.4);
 }
 
 footer{
